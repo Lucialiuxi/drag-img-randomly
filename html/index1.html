@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- 
+        index1.js碰撞换位和随机打乱顺序都有动画效果使用transition写的 
+        每次只能拖拽一个交换位置  交换位置结束之后才能继续拖拽
+    -->
+    
+    <script src="../js/index1.js"></script>
+    
+    <style>
+    body {
+        margin: 0;
+    }
+
+    #wrap {
+        width: 1200px;
+        height: 670px;
+        background: url(../img/bg.jpg) no-repeat 0 -50px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #box {
+        width: 639px;
+        height: 380px;
+        position: absolute;
+        left: 281px;
+        top: 164px;
+    }
+
+    #btn {
+        width: 96px;
+        height: 38px;
+        border: 2px solid #fff;
+        border-radius: 4px;
+        font-size: 18px;
+        line-height: 38px;
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        top: 163px;
+        left: 26px;
+        cursor: pointer;
+    }
+
+    #btn:hover {
+        color: #594da7;
+        background: #fff;
+    }
+
+    #picBox {
+        width: 460px;
+        height: 340px;
+        position: absolute;
+        top: 20px;
+        left: 159px;
+    }
+
+    #picBox div {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="box">
+            <span id="btn">随机</span>
+            <div id="picBox">
+                <div style="background: url(../img/rocket.png);"></div>
+                <div style="background: url(../img/sport.png);"></div>
+                <div style="background: url(../img/music.png);"></div>
+                <div style="background: url(../img/play.png);"></div>
+                <div style="background: url(../img/travel.png);"></div>
+                <div style="background: url(../img/sun.png);"></div>
+                <div style="background: url(../img/snow.png);"></div>
+                <div style="background: url(../img/coffee.png);"></div>
+                <div style="background: url(../img/buy.png);"></div>
+                <div style="background: url(../img/ktv.png);"></div>
+                <div style="background: url(../img/game.png);"></div>
+                <div style="background: url(../img/rain.png);"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

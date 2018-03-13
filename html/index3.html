@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/tools.js"></script>
+    <!-- 一次可以多个都在交换位置 使用transition -->
+    <script src="../js/index3.js"></script>
+    
+    <style>
+    body {
+        margin: 0;
+    }
+
+    #wrap {
+        width: 1200px;
+        height: 670px;
+        background: url(../img/bg.jpg) no-repeat 0 -50px;
+        /* background-color: cornflowerblue; */
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #box {
+        width: 639px;
+        height: 380px;
+        position: absolute;
+        left: 281px;
+        top: 164px;
+        /* background-color: darkslateblue; */
+    }
+
+    #btn {
+        width: 96px;
+        height: 38px;
+        border: 2px solid #fff;
+        border-radius: 4px;
+        font-size: 18px;
+        line-height: 38px;
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        top: 163px;
+        left: 26px;
+        cursor: pointer;
+    }
+
+    #btn:hover {
+        color: #594da7;
+        background: #fff;
+    }
+
+    #picBox {
+        width: 460px;
+        height: 340px;
+        position: absolute;
+        top: 20px;
+        left: 159px;
+    }
+
+    #picBox div {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        float: left;
+        margin: 7px;
+        transition: left 800ms,top 800ms;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="box">
+            <span id="btn">随机</span>
+            <div id="picBox">
+                <div class="item" style="background: url(../img/rocket.png);"></div>
+                <div class="item"  style="background: url(../img/sport.png);"></div>
+                <div class="item"  style="background: url(../img/music.png);"></div>
+                <div class="item"  style="background: url(../img/play.png);"></div>
+                <div class="item"  style="background: url(../img/travel.png);"></div>
+                <div class="item"  style="background: url(../img/sun.png);"></div>
+                <div class="item"  style="background: url(../img/snow.png);"></div>
+                <div class="item"  style="background: url(../img/coffee.png);"></div>
+                <div class="item"  style="background: url(../img/buy.png);"></div>
+                <div class="item"  style="background: url(../img/ktv.png);"></div>
+                <div  class="item" style="background: url(../img/game.png);"></div>
+                <div class="item"  style="background: url(../img/rain.png);"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
